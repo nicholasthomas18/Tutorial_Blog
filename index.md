@@ -6,7 +6,7 @@
 
 ---
 
-## You’ll learn to:\*\*
+## You’ll learn to:
 
 - Explain cross validation in plain language
 - Choose the right CV variant for your data
