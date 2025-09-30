@@ -24,9 +24,9 @@ $$
 \hat{R}_{\text{CV}}(f) \;=\; \frac{1}{K}\sum_{k=1}^{K}\; \frac{1}{|V*k|}\sum*{(x_i,y_i)\in V_k} \; L\big(y_i,\; f^{(-k)}(x_i)\big)
 $$
 
-- \(V_k\) is the validation fold at iteration \(k\)
-- \(f^{(-k)}\) is the model trained on the other \(K-1\) folds
-- \(L(\cdot)\) is a loss (e.g., squared error, log-loss, 0/1 error)
+- $\(V_k\)$ is the validation fold at iteration $\(k\)$
+- $\(f^{(-k)}\)$ is the model trained on the other $\(K-1\)$ folds
+- $\(L(\cdot)\)$ is a loss (e.g., squared error, log-loss, 0/1 error)
 
 ---
 
