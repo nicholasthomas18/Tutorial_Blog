@@ -21,7 +21,7 @@ When training a model to predict data, we often have tuning options, little leve
 Mathematically, **K-fold CV** estimates out-of-sample risk as:
 
 $$
-\hat{R}_{\text{CV}}(f) \;=\; \frac{1}{K}\sum_{k=1}^{K}\; \frac{1}{|V*k|}\sum*{(x_i,y_i)\in V_k} \; L\big(y_i,\; f^{(-k)}(x_i)\big)
+\hat{R}_{\text{CV}}(f) \=\ \frac{1}{K}\sum_{k=1}^{K}\ \frac{1}{|V*k|}\sum*{(x_i,y_i)\in V_k} \ L\big(y_i,\ f^{(-k)}(x_i)\big)
 $$
 
 - $\(V_k\)$ is the validation fold at iteration $\(k\)$
@@ -70,3 +70,11 @@ X, y = load_diabetes(return_X_y=True)
 # A 5-fold splitter; shuffling is good for i.i.d. data
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
 ```
+
+## Call to Action
+
+Go the extra mile and do a cross validation. It’s worth it to figure out which parameters are best for your data.
+
+## NOTE TO THE READER
+
+This blogpost was rushed to be published to meet a deadline and is not complete. The publisher is planning on coming back to improve it.
