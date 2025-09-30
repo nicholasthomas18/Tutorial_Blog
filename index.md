@@ -4,15 +4,9 @@
 
 ![A 5-fold cross-validation schematic showing rotating validation folds](https://upload.wikimedia.org/wikipedia/commons/1/1c/K-fold_cross_validation_EN.jpg "Five folds; each fold takes a turn as validation")
 
-_Alt text: Diagram of 5-fold cross-validation where each fold becomes the validation set once._
-
 ---
 
-## Why this post?
-
-We’re covering cross validation in **STAT 348**, and it isn’t obvious at first why we’d train a model _K_ times on different splits. Writing this helped me clarify the _why_, _when_, _where in the workflow_, and _how to implement it_—and hopefully it helps you, too.
-
-**You’ll learn to:**
+## You’ll learn to:\*\*
 
 - Explain cross validation in plain language
 - Choose the right CV variant for your data
@@ -26,9 +20,9 @@ When training a model to predict data, we often have tuning options, little leve
 
 Mathematically, **K-fold CV** estimates out-of-sample risk as:
 
-\[
+$$
 \hat{R}_{\text{CV}}(f) \;=\; \frac{1}{K}\sum_{k=1}^{K}\; \frac{1}{|V*k|}\sum*{(x_i,y_i)\in V_k} \; L\big(y_i,\; f^{(-k)}(x_i)\big)
-\]
+$$
 
 - \(V_k\) is the validation fold at iteration \(k\)
 - \(f^{(-k)}\) is the model trained on the other \(K-1\) folds
