@@ -1,9 +1,7 @@
----
-title: "Exploring Pokémon Stats with the PokeAPI"
-description: "Using Python and a public API to collect and analyze Pokémon stats."
-author: "Nicholas Thomas"
-categories: [data curation, python, api, eda]
----
+# Exploring Pokémon Stats with the PokeAPI  
+
+Using Python and a public API to collect and analyze Pokémon stats  
+*By Nicholas Thomas — Data Curation, Python, API, EDA Project*  
 
 ## Introduction
 
@@ -45,15 +43,50 @@ The data was obtained from the **[PokeAPI](https://pokeapi.co/)**, which is a fr
 
 If someone wanted to build a similar dataset, just reference the code above.
 
-## EDA
-Exploratory Data Analysis revealed several patterns and relationships among the 200 Pokémon.  
+## EDA  
+
+Exploratory Data Analysis revealed several clear patterns and relationships among the Pokémon in the dataset.  
 Below are some of the most interesting findings and visual highlights.  
 
 ### Summary Statistics  
-- The dataset contained **200 Pokémon** and **7 variables**.  
+- The dataset contained **200 Pokémon** and **7 key variables**.  
 - The **average attack** value was about 70, and the **average HP** was around 65.  
-- **Height** and **weight** were heavily right-skewed, meaning most Pokémon are small but a few are much larger than average.  
-- **Base experience** ranged from around 40 to over 600, showing a wide range in training levels.  
+- **Height** and **weight** were heavily right-skewed — most Pokémon are small, while a few stand out as much larger and heavier.  
+- **Base experience** ranged from about 40 to over 600, showing a wide gap between beginner-level and highly experienced Pokémon.  
 
+---
 
+### Weight Distribution  
+
+The first plot shows the distribution of Pokémon weights.  
+
+![Weight Distribution](../images/weights.png)
+
+Most Pokémon cluster on the lighter side, with a long tail representing a few very heavy species.  
+This makes sense considering that small creatures like Pikachu and Eevee are far more common than massive ones like Onix or Snorlax.  
+
+---
+
+### Relationship Between Weight and HP  
+
+I also examined how weight relates to HP (health points).  
+
+![Weight vs HP](../images/weights_vs_hp.png)
+
+The upward trend is clear — heavier Pokémon generally have higher HP, meaning they can take more damage in battle.  
+While there are a few exceptions, the relationship aligns with intuition: bulkier Pokémon tend to be sturdier and more durable.  
+
+---
+
+Together, these plots show that physical size is a strong indicator of endurance in Pokémon, though not necessarily of attack power.  
+In future analysis, it would be interesting to explore how weight and experience combine to influence overall combat effectiveness.
+
+## Resources and Links  
+
+If you’d like to explore this project further or build your own version, the following resources are a good place to start:  
+
+- **PokeAPI Documentation:** [https://pokeapi.co/](https://pokeapi.co/) – Official API reference and endpoints for Pokémon data.  
+
+You can view the full code and dataset for this project here:  
+➡️ **GitHub Repository:** [https://github.com/nicholasthomas18/pokemon-api-project](https://github.com/nicholasthomas18/pokemon-api-project)  
 
